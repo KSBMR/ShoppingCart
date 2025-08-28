@@ -116,7 +116,7 @@ const AddCartToHTML = () =>{
               </div>
               <div class="name">${info.name}</div>
               <div class="totalprice">
-                $${info.price * cart.quantity}
+                $${(info.price * cart.quantity).toFixed(2)}
               </div>
 
               <div class="quantity">
@@ -214,4 +214,5 @@ const init = () => {
         }
     })
 }
+
 init()
